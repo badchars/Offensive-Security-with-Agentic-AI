@@ -38,7 +38,7 @@
         },
         "sendHeaders": true,
         "specifyHeaders": "json",
-        "jsonHeaders": "{\n  \"Key\": \"0cb60671d210a54aef8abfd78d112a9b892019d5e3ee9d88d4f6bee2e3aa80e6922aed821beca8c0\",\n  \"Accept\": \"application/json\"\n}\n",
+        "jsonHeaders": "{\n  \"Key\": \"<YOUR_API_KEY>\",\n  \"Accept\": \"application/json\"\n}\n",
         "options": {}
       },
       "type": "n8n-nodes-base.httpRequest",
@@ -55,7 +55,7 @@
         "url": "=https://www.virustotal.com/api/v3/ip_addresses/{{ $json['Check IP, Domain or URL'] }}",
         "sendHeaders": true,
         "specifyHeaders": "json",
-        "jsonHeaders": "{\n  \"x-apikey\": \"4342690609a83cc7f096cba272c6513bc80becb05303972380c98de9f9cec717\"\n}\n",
+        "jsonHeaders": "{\n  \"x-apikey\": \"<YOUR_API_KEY>\"\n}\n",
         "options": {}
       },
       "type": "n8n-nodes-base.httpRequest",
@@ -72,7 +72,7 @@
         "url": "=https://api.greynoise.io/v3/community/{{ $json['Check IP, Domain or URL'] }}",
         "sendHeaders": true,
         "specifyHeaders": "json",
-        "jsonHeaders": "{\n  \"key\": \"jw8hIMh4H16oTtKeU0KmweEsNqN9URCuNGNUnHJ5DVKSIzgGsGRdif95Zd1EnMqX\"\n}\n",
+        "jsonHeaders": "{\n  \"key\": \"<YOUR_API_KEY>\"\n}\n",
         "options": {}
       },
       "type": "n8n-nodes-base.httpRequest",
@@ -89,7 +89,7 @@
         "url": "=https://otx.alienvault.com/api/v1/indicators/IPv4/{{ $json['Check IP, Domain or URL'] }}",
         "sendHeaders": true,
         "specifyHeaders": "json",
-        "jsonHeaders": "{\n  \"X-OTX-API-KEY\": \"e9175753c1a808d78fe7e698d697396d082e4c975c87e75ee977115a58954878\"\n}\n",
+        "jsonHeaders": "{\n  \"X-OTX-API-KEY\": \"<YOUR_API_KEY>\"\n}\n",
         "options": {}
       },
       "type": "n8n-nodes-base.httpRequest",
@@ -107,7 +107,7 @@
         "url": "=https://urlscan.io/api/v1/scan/",
         "sendHeaders": true,
         "specifyHeaders": "json",
-        "jsonHeaders": "{\n  \"API-Key\": \"01972ad5-5094-762e-b517-ff2bb6db71e6\",\n  \"Content-Type\": \"application/json\"\n}\n",
+        "jsonHeaders": "{\n  \"API-Key\": \"<YOUR_API_KEY>\",\n  \"Content-Type\": \"application/json\"\n}\n",
         "sendBody": true,
         "specifyBody": "json",
         "jsonBody": "={\n  \"url\": \"{{ $json['Check IP, Domain or URL'] }}\"\n}\n",
@@ -256,7 +256,7 @@
         "url": "=https://api.securitytrails.com/v1/domain/{{ $json['Check IP, Domain or URL'] }}/subdomains",
         "sendHeaders": true,
         "specifyHeaders": "json",
-        "jsonHeaders": "{\n  \"APIKEY\": \"yPTofOVkxa9O0TL8VjCXOSkeiKx-Nhve\"\n}\n",
+        "jsonHeaders": "{\n  \"APIKEY\": \"<YOUR_API_KEY>\"\n}\n",
         "options": {}
       },
       "type": "n8n-nodes-base.httpRequest",
@@ -310,7 +310,7 @@
     },
     {
       "parameters": {
-        "url": "=https://api.shodan.io/shodan/host/{{ $json.ip }}?key=c2kt9GangmhYlPCDoS01KtTyFFAq2JHT",
+        "url": "=https://api.shodan.io/shodan/host/{{ $json.ip }}?key=<YOUR_API_KEY>",
         "options": {}
       },
       "type": "n8n-nodes-base.httpRequest",
